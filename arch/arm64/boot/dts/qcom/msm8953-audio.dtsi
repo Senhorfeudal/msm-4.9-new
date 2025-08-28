@@ -18,6 +18,11 @@
 	iommus = <&apps_iommu 0x2401 0x0>;
 	qcom,smmu-sid-mask = /bits/ 64 <0xf>;
 };
+dai_mi2s6: qcom,msm-dai-mi2s6 {
+    compatible = "qcom,msm-dai-mi2s";
+    qcom,msm-dai-q6-mi2s-id = <6>;
+    status = "okay";
+};
 
 &soc {
 	qcom,msm-audio-apr {
